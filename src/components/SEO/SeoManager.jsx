@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 
+const siteUrl = "https://tanugym.in";
+
 const seoConfig = {
   title: "TANU GYM | Luxury. Strength. Discipline.",
   description:
@@ -51,12 +53,8 @@ const setMetaContent = (selector, attributes, content) => {
 
 function SeoManager() {
   useEffect(() => {
-    const currentUrl = new URL(window.location.href);
-    currentUrl.hash = "";
-
-    const canonicalUrl = currentUrl.toString();
-    const siteOrigin = currentUrl.origin;
-    const imageUrl = new URL("/logo.png", siteOrigin).toString();
+    const canonicalUrl = `${siteUrl}/`;
+    const imageUrl = `${siteUrl}/logo.png`;
 
     document.documentElement.lang = "en-IN";
     document.title = seoConfig.title;
@@ -156,13 +154,13 @@ function SeoManager() {
         "@context": "https://schema.org",
         "@type": "WebSite",
         name: "TANU GYM",
-        url: siteOrigin,
+        url: canonicalUrl,
         description: seoConfig.description,
       },
       {
         "@context": "https://schema.org",
         "@type": "ExerciseGym",
-        "@id": `${siteOrigin}/#tanugym`,
+        "@id": `${canonicalUrl}#tanugym`,
         name: "TANU GYM",
         image: imageUrl,
         url: canonicalUrl,

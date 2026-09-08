@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tanugym.vercel.app/sitemap.xml
+Sitemap: https://tanugym.in/sitemap.xml

@@ -21,7 +21,7 @@ function Pricing() {
     },
     {
       name: "Quarterly",
-      price: "Enquire",
+      price: "INR 3500",
       duration: "3 months",
       popular: true,
       features: [

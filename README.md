@@ -2,7 +2,7 @@
 
 A modern, fully responsive gym and fitness website built with **React** and **Vite**. The project features a clean UI, smooth animations, reusable React components, and a mobile-first responsive design.
 
-🔗 **Live Demo:**(https://fit-nation-kvfu.vercel.app/)
+🔗 **Live Demo:**(https://tanugym.in/)
 
 ---
 

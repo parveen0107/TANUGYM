@@ -4,22 +4,7 @@ import path from "node:path";
 const projectRoot = process.cwd();
 const publicDir = path.join(projectRoot, "public");
 
-const normalizeSiteUrl = (value) => {
-  if (!value) {
-    return "https://tanugym.vercel.app";
-  }
-
-  const withProtocol = /^https?:\/\//i.test(value) ? value : `https://${value}`;
-
-  return withProtocol.replace(/\/+$/, "");
-};
-
-const siteUrl = normalizeSiteUrl(
-  process.env.VITE_SITE_URL ||
-    process.env.SITE_URL ||
-    process.env.VERCEL_PROJECT_PRODUCTION_URL ||
-    process.env.VERCEL_URL
-);
+const siteUrl = "https://tanugym.in";
 
 const today = new Date().toISOString().split("T")[0];
 
